@@ -1,0 +1,48 @@
+body {
+  background: #324958;
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Londrina Sketch', cursive;
+  font-size: 70px;
+  color: white;
+}
+
+
+
+h2, h4 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: white;
+}
+
+.top {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 40px
+}
+
+.medium-block-grid-5 {
+  position: relative;
+  top: 70px;
+}
+
+img {
+  height: 108px;
+  width: 108px;
+}
+
+#mks {
+  width: 30px;
+  height: auto;
+}
+
+.chosen {
+  position: relative;
+  left: 40%;
+}
+
+.message {
+
+}
