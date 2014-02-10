@@ -16,6 +16,9 @@ h2, h4 {
   color: white;
 }
 
+h2 {
+  font-size: 60px;
+}
 .top {
   width: 100%;
   margin: auto;
@@ -41,8 +44,13 @@ img {
 .chosen {
   position: relative;
   left: 40%;
+  pointer-events: none;
 }
 
 .message {
-
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px
 }
+

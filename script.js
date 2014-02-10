@@ -2,25 +2,17 @@ var studentArray = ["https://pbs.twimg.com/profile_images/423635742011580416/MJu
 studentArray.sort(function() {return 0.5 - Math.random() });
 
 $( document ).ready(function() {
-  $('#one').append('<img src=' +studentArray[0] +'>');
-  $('#two').append('<img src=' +studentArray[1] +'>');
-  $('#three').append('<img src=' +studentArray[2] +'>');
-  $('#four').append('<img src=' +studentArray[3] +'>');
-  $('#five').append('<img src=' +studentArray[4] +'>');
-  $('#six').append('<img src=' +studentArray[5] +'>');
-  $('#seven').append('<img src=' +studentArray[6] +'>');
-  $('#eight').append('<img src=' +studentArray[7] +'>');
-  $('#nine').append('<img src=' +studentArray[8] +'>');
-  $('#ten').append('<img src=' +studentArray[9] +'>');
+  for (i=0; i<=10; i += 1) {
+    console.log(i);
+    $('#' + i).append('<img src=' +studentArray[i] +'>');
+  };
 
   $( 'li' ).click(function() {
     $( this ).siblings().hide();
     $( this ).addClass("chosen");
-
+    $( 'h4' ).remove();
+    $('.message').append('<h2>Don\'t compare yourself!</h2>')
+    $('.message').append('<h2>Keep learning! Keep building!</h2>')
   });
-
-
-
-
 });
 
